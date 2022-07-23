@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <form>
+
+    <fieldset>
+      <legend>Форма обратной связи</legend>
+
+    <label for="surname">Ваша фамилия</label>
+    <input type="text" id="surname">
+
+    <br> <br>
+
+    <label for="name">Ваше имя</label>
+    <input type="text" id="name">
+
+    <br> <br>
+
+    <label for="mobilephone">Мобильный телефон</label>
+    <input type="tel" value="+375" id="mobilephone">
+
+    <br> <br>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email">
+
+    <br><br>
+
+    <label for="confirmemail">Confirm E-mail</label>
+    <input type="email" id="confirmemail">
+
+    <br> <br>
+
+    <label for="theme">Тема обращения</label>
+    <select name="theme" id="theme">
+
+      <option value="choose a theme" disabled selected>Выберите тему обращения</option>
+      <option value="change data">Изменить данные в личном кабинете</option>
+      <option value="problems logging">Не могу войти в личный кабинет</option>
+      <option value="another theme">Другая тема обращения</option>
+
+    </select>
+
+    <br> <br>
+
+    <label for="message">Сообщение:</label>
+    <br> <br>
+    <textarea placeholder="Введите текст Вашего сообщения..." autofocus id="message" rows="15" cols="85"></textarea>
+
+    <br> <br>
+
+    <input type="file" multiple>
+
+    <br> <br>
+
+    <input type="checkbox" id="accept" checked>
+    <label for="accept">
+      Вы соглашаетесь с тем, чтобы мы обрабатывали Ваши данные для предоставления Вам обратной связи.
+      </label>
+
+    <br> <br>
+
+    <button type="submit">Submit</button>
+
+    <button type="reset">Reset</button>
+    </fieldset>
+  </form>
+</body>
+</html>
